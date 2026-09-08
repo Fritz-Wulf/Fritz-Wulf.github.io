@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08080d">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Fritz.Wulf – generationsbewusste Runtime, Paketmanager und Repository für FRITZ!Box/Freetz-NG.">
+  <title>Fritz.Wulf // NeonWulf Gateway</title>
+  <link rel="stylesheet" href="/assets/neonwulf.css">
+</head>
+<body>
+  <div class="scene" aria-hidden="true">
+    <div class="aurora aurora-pink"></div><div class="aurora aurora-mint"></div>
+    <div class="horizon-grid"></div><div class="scanlines"></div>
+  </div>
+  <main class="shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FRITZ.WULF // ALL GENERATIONS // FAIL-CLOSED</p>
+        <h1>FRITZ.<span>WULF</span></h1>
+        <p class="lead">Generationsbewusste Freetz-NG Runtime, Paketverwaltung und verifizierbares Repository – von historischen MIPS-Boxen bis zu neueren Plattformen.</p>
+      </div>
+      <nav class="hero-actions" aria-label="Hauptnavigation">
+        <a class="button primary" href="/repo/">Repository öffnen</a>
+        <a class="button" href="https://github.com/Fritz-Wulf/fw">fw auf GitHub</a>
+      </nav>
+    </header>
+
+    <section class="metrics" aria-label="Repository-Status">
+      <article><span>PAKETVERSIONEN</span><strong id="package-count">–</strong><small>aus /repo/index.json</small></article>
+      <article><span>FW VERSION</span><strong id="fw-version">–</strong><small>stable channel</small></article>
+      <article><span>PROFILE</span><strong>4</strong><small>3270 · 7490 · 7530 · 7590</small></article>
+      <article><span>INTEGRITÄT</span><strong>SHA-256</strong><small>fail-closed validation</small></article>
+    </section>
+
+    <section class="routes">
+      <div class="section-head"><p class="eyebrow">ROUTES // FRITZ.WULF CONSTELLATION</p><h2>Systemzugänge</h2></div>
+      <div class="route-grid">
+        <a class="route-card" href="/repo/"><b>RE</b><span><strong>Paket-Repository</strong><small>Suche · Filter · historische Versionen · Checksums</small></span><i>↗</i></a>
+        <a class="route-card" href="/repo/index.json"><b>JS</b><span><strong>Repository API</strong><small>Single Source of Truth für Website und Paketmanager</small></span><i>↗</i></a>
+        <a class="route-card" href="https://github.com/Fritz-Wulf/fw"><b>FW</b><span><strong>fw Paketmanager</strong><small>fw · fwulf · fritzwulf</small></span><i>↗</i></a>
+        <a class="route-card" href="https://github.com/Fritz-Wulf/repo"><b>GH</b><span><strong>Repository Source</strong><small>Metadaten · CI · Pages · Provenienz</small></span><i>↗</i></a>
+      </div>
+    </section>
+
+    <section class="generation-panel">
+      <div><p class="eyebrow">DEVICE PROFILES</p><h2>Generationen getrennt, Runtime gemeinsam</h2></div>
+      <div class="chips"><span>3270 · UNKNOWN</span><span>7490 · HISTORICAL VERIFIED</span><span>7530 · UNKNOWN</span><span>7590 · UNKNOWN</span></div>
+      <p>Kompatibilität wird nie aus dem Produktnamen allein abgeleitet. Architektur, Endianness, Kernel, libc, FRITZ!OS und ABI werden profilbezogen behandelt.</p>
+    </section>
+
+    <footer><span>FRITZ.WULF // RETROWAVE MESH</span><span id="repo-state">repository status // loading</span></footer>
+  </main>
+  <script type="module" src="/assets/site.mjs"></script>
+</body>
+</html>
